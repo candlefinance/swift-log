@@ -18,16 +18,16 @@ import PackageDescription
 let package = Package(
     name: "swift-log",
     products: [
-        .library(name: "Logging", targets: ["Logging"])
+        .library(name: "CandleLogging", targets: ["CandleLogging"])
     ],
     targets: [
         .target(
-            name: "Logging",
+            name: "CandleLogging",
             dependencies: []
         ),
         .testTarget(
             name: "LoggingTests",
-            dependencies: ["Logging"]
+            dependencies: ["CandleLogging"]
         ),
     ]
 )

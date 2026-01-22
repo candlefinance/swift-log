@@ -146,9 +146,9 @@ public protocol LogHandler: _SwiftLogSendableLogHandler {
     /// `log(level:message:metadata:source:file:function:line:)` instead.
     @available(*, deprecated, renamed: "log(level:message:metadata:source:file:function:line:)")
     func log(
-        level: Logging.Logger.Level,
-        message: Logging.Logger.Message,
-        metadata: Logging.Logger.Metadata?,
+        level: CandleLogging.Logger.Level,
+        message: CandleLogging.Logger.Message,
+        metadata: CandleLogging.Logger.Metadata?,
         file: String,
         function: String,
         line: UInt
@@ -220,9 +220,9 @@ extension LogHandler {
 
     @available(*, deprecated, renamed: "log(level:message:metadata:source:file:function:line:)")
     public func log(
-        level: Logging.Logger.Level,
-        message: Logging.Logger.Message,
-        metadata: Logging.Logger.Metadata?,
+        level: CandleLogging.Logger.Level,
+        message: CandleLogging.Logger.Message,
+        metadata: CandleLogging.Logger.Metadata?,
         file: String,
         function: String,
         line: UInt
